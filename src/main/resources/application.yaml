@@ -5,6 +5,14 @@ spring:
     username: root
     password: pw1cGs7k/p7jHWuFS5OGfp4xmTwnPIja
     url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/user_ig
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        boot:
+          allow_jdbc_metadata_access: false
 
   security:
     oauth2:
@@ -15,5 +23,5 @@ spring:
 
 logging:
   level:
-    org.springframework.security: DEBUG
+    org.springframework.security: INFO
 
