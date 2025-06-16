@@ -1,5 +1,7 @@
 # Introduction 
-A spring boot application with Java 21 that provides some services for managing users with roles.
+A Spring Boot application using Java 21 that provides services for managing users and their roles.
+
+The implementation covers the basic functional requirements as well as the optional requirements 2.2.1, 2.2.2, and 2.2.3.
 
 
  
