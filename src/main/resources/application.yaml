@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: pw1cGs7k/p7jHWuFS5OGfp4xmTwnPIja
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/user_ig
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://idpgw.test4mind.com/realms/demo-interview
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
